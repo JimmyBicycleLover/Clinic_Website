@@ -308,6 +308,38 @@ html {
     align-items: center;
     margin-bottom: 15rem;
 }
+.pricing-bottom-content{
+    display: flex;
+}
+.pricing-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-bottom img{
+    border-radius: 3rem;
+}
+
+
+.pricing-bottom h2 {
+    font-size: 2.6rem;
+    color: #073e72;
+    width: 50rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+
+.pricing-bottom-content {
+    font-size: 1rem;
+    color:#f8872b;
+    display: flex;
+    flex-direction: column;
+
+    
+}
 
 .pricing-top img {
     margin-right: 6rem;
@@ -322,75 +354,16 @@ html {
     margin-bottom: 3rem;
 }
 
+
 .pricing-top p{
-    
-}
-
-.pricing-top button, .pricing button {
-    width: 18rem;
-    height: 4rem;
-    background-color: #fff;
-    border: 0.1rem solid #f8872b;
-    border-radius: 3rem;
-    font-size: 1.6rem;
-    color: #f8872b;
-    cursor: pointer;
-}
-
-.pricing-cards {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    line-height: 2;
+    font-size: 2rem;
+    width: 50rem;
+    color:#f8872b;
     margin-bottom: 5rem;
 }
 
-.pricing-card {
-    width: 30rem;
-    height: 45rem;
-    background-color: #f7f7f7;
-    margin: 1rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 0;
-    cursor: pointer;
-    position: relative;
-}
 
-.pricing-card-icons {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.pricing-card-icons i {
-    width: 3rem;
-    height: 3rem;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .1);
-    font-size: 1.2rem;
-    color: #073e72;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(2rem);
-    transition: all .3s;
-}
-
-.pricing-card:hover .pricing-card-icons i {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
 
 .img-wrapper {
     width: 20rem;

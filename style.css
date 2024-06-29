@@ -215,7 +215,7 @@ html {
 /* Products */
 .products {
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,53 +292,49 @@ html {
 
 
 /* Pricing */
+ h3{
+    font-size: 2rem;
+    color: #073e72;
+}
 .pricing {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16rem;
 }
 
 .pricing-top {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10rem;
+}
+.pricing-bottom {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15rem;
 }
-.pricing-bottom-content{
-    display: flex;
-}
-.pricing-bottom{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.pricing-bottom img{
-    border-radius: 3rem;
-}
-
-
-.pricing-bottom h2 {
-    font-size: 2.6rem;
-    color: #073e72;
-    width: 50rem;
-    line-height: 1;
-    margin-bottom: 3rem;
-}
-
 
 .pricing-bottom-content {
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-right: 6rem;
     color:#f8872b;
     display: flex;
     flex-direction: column;
-
-    
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.pricing-bottom-content h1{
+    color: #073e72;
+    font-size: 2.6rem;
+}
+.pricing-bottom-content h2{
+    color: #073e72;
+    font-size: 2rem;
 }
 
 .pricing-top img {
@@ -346,56 +342,42 @@ html {
     border-radius: 3rem;
 }
 
-.pricing-top h2 {
-    font-size: 2.6rem;
-    color: #073e72;
-    width: 50rem;
-    line-height: 1;
-    margin-bottom: 3rem;
-}
-
-
-.pricing-top p{
-    line-height: 2;
+.pricing-top-content {
     font-size: 2rem;
-    width: 50rem;
+    margin-right: 6rem;
     color:#f8872b;
-    margin-bottom: 5rem;
-}
-
-
-
-.img-wrapper {
-    width: 20rem;
-    height: 18rem;
-    margin-bottom: 5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.pricing-card h3 {
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
+.pricing-top-content h1{
+    color: #073e72;
+    font-size: 2.6rem;
+}
+
+.pricing-top-content h2 {
+    font-size: 2rem;
     color: #073e72;
 }
-
-.stars i {
-    font-size: 1.6rem;
-    color: #f8872b;
+/* About UPC */
+.about-upc{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
 }
-
-.pricing-card h4 {
-    font-size: 1.8rem;
+.about-upc h3 {
+    font-size: 2rem;
     color: #073e72;
+    margin-bottom: 4rem;
 }
-/* End of Pricing */
-
 
 /* Blog */
 .blog {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-color: #0b3954;
     display: flex;
     justify-content: center;
@@ -403,88 +385,68 @@ html {
 }
 
 .blog-content {
-    width: 50%;
-    height: 50rem;
+    width: 60%;
+    height: 40rem;
     background-color: #ffb128;
     border-radius: 3rem;
-    /* position: relative; */
 }
 
 .blog-top {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.blog-top img {
-  margin-top: 5rem;
-}
-
-.trends h1{
-   font-size: 6rem;
-   width: 35rem;
-   line-height: 1;
-   color: #fff;
-   margin-bottom: 3rem;
-}
-
-.trends button {
-    width: 18rem;
-    height: 4rem;
-    background-color: #0b3954;
-    border: none;
-    border-radius: 3rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: #fff;
-}
-
-.blog-articles {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 2rem;
-}
-
-.article {
-    width: 23rem;
-    height: 10rem;
-    margin: 0 3rem;
-    display: flex;
     align-items: center;
-    cursor: pointer;
 }
-.article span {
+.blog-top  h1 {
+    font-size: 3rem;
+    color:white;
+}
+.blog-top h2{
     font-size: 2rem;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 1;
+    color:white;
+}
+.blog-top input{
+    width: 60%;
+    border-radius: 1rem;
+    border: 3px solid white;
+
+}
+.blog-top textarea{
+    width: 60%;
+    border-radius: 1rem;
+    border: 3px solid white;
+}
+.blog-top .submit-btn{
+    margin-top: 8px;
+    border-radius: 1rem;
+    width: 60%;
+    padding: 8px 16px;
+    border: 3px solid #0b3954;
+    color: white;
+    background-color: #0b3954;
+    font-size: 1.3rem;
+
 }
 
-.article span:nth-child(1) {
-    margin-right: 1rem;
-    font-size: 5rem;
-    font-weight: bold;
-}
 /* End of Blog */
 
 /* Contact */
 .contact {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contact-content {
-    width: 50%;
-    height: 15rem;
+    width: 100%;
+    height: 2rem;
     display: flex;
-    /* position: relative; */
 }
 
 .content-left {
-    width: 40%;
+    width: 20%;
     height: 100%;
     background-color: #ffb128;
     border-radius: 2rem 0 0 2rem;
@@ -492,21 +454,8 @@ html {
     align-items: center;
     padding-left: 4rem;
 }
-
-.content-left h2 {
-    width: 80%;
-    font-size: 2.2rem;
-    line-height: 1.4;
-    color: #fff;
-}
-
-.content-left span {
-    font-size: 2.5rem;
-    color: #073e72;
-}
-
 .content-right {
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: #0b3954;
     border-radius: 0 2rem 2rem 0;
@@ -514,48 +463,46 @@ html {
     align-items: center;
     justify-content: center;
 }
-
-.content-right input {
-    width: 35rem;
-    height: 4rem;
-    background-color: #174b69;
-    padding: 2rem;
-    border: none;
-    border-radius: .5rem;
-    color: #fff;
-    margin-right: 1rem;
-}
-
-.content-right input::placeholder {
-    color: #fff;
-    font-size: 1.4rem;
-}
-
-.content-right input:focus {
-    border: .1rem solid #f8872b;
-}
-
-.content-right button {
-    width: 10rem;
-    height: 4rem;
-    background-color: #f8872b;
-    border: none;
-    border-radius: 3rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: #fff;
-}
 /* End of Contact */
+/* Open time */
+.open-time{
+    width: 60%;
+    margin:0 auto;
+    margin-bottom: 10%;
 
+}
+table {
+    width: 100%;
+    border-radius: 3rem;
+    text-align:center;
+}
+table th{
+    background-color:#0b3954;
+    color:#ffffff;
+    height:40px;
+    font-size: 2rem;
+
+
+  }
+table tr td{
+    border: 1px solid black;
+    font-size: 3rem;
+    vertical-align:middle;
+}
+
+
+
+
+/* Open time end */
 /* Footer */
 .footer {
-    width: 50%;
-    height: 5rem;
+    width: 100%;
+    height: 16rem;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border-top: .1rem solid #ccc;
+    background-color: #ccc;
 }
 
 .copyright {
